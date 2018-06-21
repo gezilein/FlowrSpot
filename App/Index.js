@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Font } from "expo";
 import { StyleSheet, Text, View } from "react-native";
 import { Container } from "./Components/Container/Index";
+import HomeStack from "./Config/Routes";
 
 export default class FlowrSpot extends Component {
 	state = {
@@ -22,7 +23,7 @@ export default class FlowrSpot extends Component {
 			Log.error(e);
 		} finally {
 			console.info(
-				"Font 'Ubuntu-Regular' loaded? ",
+				"Font 'Ubuntu-Regular' loaded?",
 				Font.isLoaded("Ubuntu-Regular")
 			);
 			this.setState({ ready: true });
@@ -31,13 +32,7 @@ export default class FlowrSpot extends Component {
 
 	render() {
 		return this.state.ready ? (
-			<Container>
-				<View>
-					<Text>
-						Open up App.js to start working on your app!
-					</Text>
-				</View>
-			</Container>
+			<HomeStack onNavigationStateChange={null} />
 		) : (
 			<Text>Getting ready...</Text>
 		);
