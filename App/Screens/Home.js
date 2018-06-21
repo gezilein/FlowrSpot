@@ -7,7 +7,6 @@ class HomeScreen extends Component {
 	render() {
 		return (
 			<Container>
-				<StatusBar barStyle="light-content" />
 				<KeyboardAvoidingView behavior="padding">
 					<Text>home here</Text>
 				</KeyboardAvoidingView>

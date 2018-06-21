@@ -4,25 +4,27 @@ import Colors from "../../Config/Colors";
 export default StyleSheet.create({
 	Container: {
 		flexDirection: "row",
-		marginTop: StatusBar.currentHeight
+		marginTop: StatusBar.currentHeight,
+		height: 45,
+		alignItems: "center"
 	},
-	MenuArea: {
-		paddingHorizontal: 5,
-		paddingBottom: 5
+	MenuTouch: {
+		position: "absolute",
+		top: 0,
+		left: 0,
+		paddingHorizontal: 20
 	},
-	Menu: {
-		fontFamily: "Ubuntu-Regular",
-		fontSize: 18,
-		letterSpacing: 3,
+	MenuText: {
+		fontFamily: "Ubuntu-Bold",
+		fontSize: 28,
+		letterSpacing: 2,
 		color: Colors.$coolGrey
 	},
 	Logo: {
 		flex: 1,
-		fontFamily: "Ubuntu-Regular",
+		fontFamily: "Ubuntu-Bold",
 		fontSize: 18,
-		letterSpacing: 3,
 		textAlign: "center",
-		alignSelf: "center",
 		color: Colors.$pinkishTan
 	}
 });

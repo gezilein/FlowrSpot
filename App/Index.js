@@ -16,7 +16,8 @@ export default class FlowrSpot extends Component {
 	async _loadAssetsAsync() {
 		try {
 			await Font.loadAsync({
-				"Ubuntu-Regular": require("./Assets/Fonts/Ubuntu-Regular.ttf")
+				"Ubuntu-Regular": require("./Assets/Fonts/Ubuntu-Regular.ttf"),
+				"Ubuntu-Bold": require("./Assets/Fonts/Ubuntu-Bold.ttf")
 			});
 			this.setState({ ready: true });
 		} catch (e) {
@@ -25,6 +26,10 @@ export default class FlowrSpot extends Component {
 			console.log(
 				"Font 'Ubuntu-Regular' loaded => " +
 					Font.isLoaded("Ubuntu-Regular")
+			);
+			console.log(
+				"Font 'Ubuntu-Bold' loaded => " +
+					Font.isLoaded("Ubuntu-Bold")
 			);
 			this.setState({ ready: true });
 		}

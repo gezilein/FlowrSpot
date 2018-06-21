@@ -5,10 +5,10 @@ import Styles from "./Styles";
 
 const Header = () => (
 	<View style={Styles.Container}>
-		<TouchableOpacity style={Styles.MenuArea}>
-			<Text style={Styles.Menu}>...</Text>
-		</TouchableOpacity>
 		<Text style={Styles.Logo}>FlowrSpot</Text>
+		<TouchableOpacity style={Styles.MenuTouch}>
+			<Text style={Styles.MenuText}>...</Text>
+		</TouchableOpacity>
 	</View>
 );
 
