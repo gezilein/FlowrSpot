@@ -1,11 +1,34 @@
 import React from "react";
-import { Text, TouchableOpacity, View } from "react-native";
+import { Image, TouchableOpacity, View } from "react-native";
 
 import Styles from "./Styles";
 
 const Footer = () => (
 	<View style={Styles.Container}>
-		<Text>Footer</Text>
+		<TouchableOpacity style={Styles.Button}>
+			<Image
+				source={require("./Images/favorites_icons.png")}
+				style={Styles.Image}
+			/>
+		</TouchableOpacity>
+		<TouchableOpacity style={Styles.Button}>
+			<Image
+				source={require("./Images/comment_icon.png")}
+				style={Styles.Image}
+			/>
+		</TouchableOpacity>
+		<TouchableOpacity style={Styles.Button}>
+			<Image
+				source={require("./Images/new_sighting_icon.png")}
+				style={Styles.Image}
+			/>
+		</TouchableOpacity>
+		<TouchableOpacity style={Styles.Button}>
+			<Image
+				source={require("./Images/sighting_list_icon.png")}
+				style={Styles.Image}
+			/>
+		</TouchableOpacity>
 	</View>
 );
 

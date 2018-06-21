@@ -22,9 +22,9 @@ export default class FlowrSpot extends Component {
 		} catch (e) {
 			Log.error(e);
 		} finally {
-			console.info(
-				"Font 'Ubuntu-Regular' loaded?",
-				Font.isLoaded("Ubuntu-Regular")
+			console.log(
+				"Font 'Ubuntu-Regular' loaded => " +
+					Font.isLoaded("Ubuntu-Regular")
 			);
 			this.setState({ ready: true });
 		}

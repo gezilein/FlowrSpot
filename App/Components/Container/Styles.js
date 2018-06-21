@@ -5,7 +5,7 @@ export default StyleSheet.create({
 	Container: {
 		flex: 1,
 		flexDirection: "column",
-		backgroundColor: "cyan", // Colors.$primaryBackground,
+		backgroundColor: Colors.$primaryBackground,
 		justifyContent: "flex-start",
 		alignItems: "center"
 	},
