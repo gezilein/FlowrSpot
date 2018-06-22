@@ -1,7 +1,7 @@
 import { StyleSheet } from "react-native";
 import Colors from "../../Config/Colors";
 
-export default StyleSheet.create({
+const Styles = StyleSheet.create({
 	Container: {
 		height: 50,
 		flexDirection: "row",
@@ -16,3 +16,4 @@ export default StyleSheet.create({
 		height: 29
 	}
 });
+export default Styles;

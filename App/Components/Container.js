@@ -1,8 +1,8 @@
 import React from "react";
 import { View } from "react-native";
-import Styles from "./Styles";
-import { Header } from "../Header/Index";
-import { Footer } from "../Footer/Index";
+import Styles from "./Styles/Container";
+import Header from "./Header";
+import Footer from "./Footer";
 
 const Container = ({ children, backgroundColor }) => {
 	const containerStyles = [Styles.Container];

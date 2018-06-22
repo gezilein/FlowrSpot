@@ -1,7 +1,7 @@
 import { StyleSheet } from "react-native";
 import Colors from "../../Config/Colors";
 
-export default StyleSheet.create({
+const Styles = StyleSheet.create({
 	Container: {
 		flexDirection: "column",
 		alignItems: "center",
@@ -49,3 +49,5 @@ export default StyleSheet.create({
 		height: 20
 	}
 });
+
+export default Styles;

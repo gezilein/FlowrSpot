@@ -1,7 +1,7 @@
 import { StyleSheet } from "react-native";
 import Colors from "../../Config/Colors";
 
-export default StyleSheet.create({
+const Styles = StyleSheet.create({
 	Container: {
 		flex: 1,
 		flexDirection: "column",
@@ -12,3 +12,5 @@ export default StyleSheet.create({
 		flex: 6
 	}
 });
+
+export default Styles;

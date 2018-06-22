@@ -1,7 +1,7 @@
 import React from "react";
 import { View, TextInput, Image, Text, ImageBackground } from "react-native";
 
-import Styles from "./Styles";
+import Styles from "./Styles/Search";
 
 const Search = props => {
 	return (

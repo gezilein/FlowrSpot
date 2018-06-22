@@ -1,7 +1,7 @@
 import { StyleSheet, Platform, StatusBar } from "react-native";
 import Colors from "../../Config/Colors";
 
-export default StyleSheet.create({
+const Styles = StyleSheet.create({
 	Container: {
 		flexDirection: "row",
 		marginTop: StatusBar.currentHeight,
@@ -28,3 +28,5 @@ export default StyleSheet.create({
 		color: Colors.$pinkishTan
 	}
 });
+
+export default Styles;
