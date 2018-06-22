@@ -6,8 +6,7 @@ export default StyleSheet.create({
 		flex: 1,
 		flexDirection: "column",
 		backgroundColor: Colors.$primaryBackground,
-		justifyContent: "flex-start",
-		alignItems: "center"
+		justifyContent: "flex-start"
 	},
 	Placeholder: {
 		flex: 6

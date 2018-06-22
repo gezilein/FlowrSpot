@@ -1,15 +1,14 @@
 import React, { Component } from "react";
-import { StatusBar, KeyboardAvoidingView, Text } from "react-native";
+import { StatusBar, KeyboardAvoidingView, Image } from "react-native";
 
 import { Container } from "../Components/Container/Index";
+import { Search } from "../Components/Search/Index";
 
 class HomeScreen extends Component {
 	render() {
 		return (
 			<Container>
-				<KeyboardAvoidingView behavior="padding">
-					<Text>home here</Text>
-				</KeyboardAvoidingView>
+				<Search />
 			</Container>
 		);
 	}
