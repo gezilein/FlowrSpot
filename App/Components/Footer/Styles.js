@@ -3,8 +3,10 @@ import Colors from "../../Config/Colors";
 
 export default StyleSheet.create({
 	Container: {
-		height: 30,
-		flexDirection: "row"
+		height: 50,
+		flexDirection: "row",
+		alignItems: "center",
+		justifyContent: "center"
 	},
 	Button: {
 		marginHorizontal: 30
